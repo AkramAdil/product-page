@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navigation-style.css">
+    <link rel="stylesheet" href="css/product-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>E-commerce Product Page</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="navigation">
+            <i class="hamburger-menu ri-menu-line"></i>
+            <div class="logo" id="logo">
+                <h2>Shopping</h2>
+            </div>
+            <ul class="links" id="links">
+                <i class="ri-close-line close"></i>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="icons">
+                <div class="cart">
+                    <i class="cart-icon ri-shopping-cart-2-line"></i>
+                    <div class="cart-box">
+                        <p class="cart-name">Cart</p>
+                        <p class="empty-cart">Your Cart Is Empty</p>
+                        <div class="cart-item">
+                            <div class="cart-product">
+                                <img src="images/image-product-1-thumbnail.jpg">
+                                <div class="item-details">
+                                    <p class="item-name">Fall Limited Edition Sneakers</p>
+                                    <div class="item-price">
+                                        <span class="unit-price">$125.00</span>
+                                        <span class="item-amount"></span>
+                                        <span class="total-price">$375.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="ri-delete-bin-6-line"></i>
+                        </div>
+                        <button class="checkout">Checkout</button>
+                    </div>
+                </div>
+                <div class="avatar" id="avatar">
+                    <img src="images/image-avatar.png" alt="avatar">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img id ="product-image" src="images/image-product-1.jpg" alt="image-product-1">
+                </div>
+                <div class="other-images ">
+                    <img src="images/image-product-1.jpg" class="active thumbnail" alt="">
+                    <img src="images/image-product-2.jpg" class="thumbnail" alt="">
+                    <img src="images/image-product-3.jpg" class="thumbnail" alt="">
+                    <img src="images/image-product-4.jpg" class="thumbnail" alt="">
+                </div>
+            </div>
+            <div class="prdoduct-details">
+                <p class="prdoduct-brand">Brand Name</p>
+                <h1 class="prdoduct-name">Fall Limited Edition Sneakers</h1>
+                <p class="prdoduct-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis modi totam quos eaque laborum consequuntur non, adipisci quae, eum, illum qui maxime suscipit nostrum ex praesentium corporis! Reiciendis, hic.</p>
+                <div class="prdoduct-price">
+                    <p class="new-price">
+                        $125.00
+                        <span id="discount">50%</span>
+                    </p>
+                    <p class="old-price">
+                        $250.00
+                    </p>
+                </div>
+                <div class="prdoduct-bttns">
+                    <div class="contolers">
+                        <i class="ri-subtract-line" id="decrease"></i>
+                        <p id="amount">1</p>
+                        <i class="ri-add-line" id="increase"></i>
+                    </div>
+                    <button id="add-cart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
